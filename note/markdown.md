@@ -1,3 +1,14 @@
+> [!Warning]
+> Your changes will not be saved, so please don't take actual notes in this vault.
+
+> [!NOTE]
+> For compatibility reasons, if you're also using the Admonitions plugin, you should update it to at least v8.0.0 to avoid problems with the new callout system.
+
+> [!INFO]
+> Here's a callout block.
+> It supports **markdown** and [[Internal link|wikilinks]].
+
+
 # 标题
 几个#就是几级标题
 
