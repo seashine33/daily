@@ -488,7 +488,7 @@ auto ia2(ia);
 int ia[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 decltype(ia) ia3 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};//ia3的类型是int型数组，不能将其当作指针指向其他位置。
 ```
-- 为了更方便的获取数组开始及结束的地址，标准库提供了函数<span style="color: red;">begin()</span>与<span style="color: red;">end()</span>
+- 为了更方便的获取数组开始及结束的地址，标准库提供了函数`begin()`与`end()`
 ```C++
 // 将数组中全部元素置为0
 int ia[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -521,7 +521,7 @@ strcpy(p1,p2)//p2拷贝到p1
 ### 3.5.5 与旧代码的接口
 > [!NOTE]
 > string对象与字符数组可以相互初始化吗？
-- 可以使用<span style="color: red;">以空字符结束的</span>字符数组初始化string对象：`string s("Hello");`。
+- 可以使用`以空字符结束的`字符数组初始化string对象：`string s("Hello");`。
 - 但反过来不行。为此，string专门提供了名为c_str的成员函数：`const char *str = s.c_str();`。
 - 无法保证c_str函数返回的数组一直有效，如果后续操作改变了s的值，可能会使之前返回的数组失效，需要重新拷贝。
 
@@ -551,7 +551,7 @@ for(const auto &row : ia){
   }
 }
 ```
-- <span style="color: red;">指针数组</span>与<span style="color: red;">数组指针</span>
+- `指针数组`与`指针数组`
 - 使用auto可以避免类型判断，使用end()可以避免长度的判断
 ```C++
 int *ip[4];//整形指针的数组（指针数组）
