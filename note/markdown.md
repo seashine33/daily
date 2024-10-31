@@ -1,12 +1,35 @@
-> [!Warning]
-> Your changes will not be saved, so please don't take actual notes in this vault.
+# 创建目录：
+- vscode下Markdown插件
+```
+> Create Table of Contents
+```
+# 改变字体颜色
+<span style="color: brown;">这是一段棕色文本</span>  
+<span style="color: red;">这是一段红色文本</span>  
+<span style="color: orange;">这是一段橙色文本</span>  
+<span style="color: yellow;">这是一段黄色文本</span>  
+<span style="color: green;">这是一段绿色文本</span>  
+<span style="color: blue;">这是一段蓝色文本</span>  
+<span style="color: purple;">这是一段紫色文本</span>  
+<span style="color: pink;">这是一段粉色文本</span>  
+
+# 标签
+> [!IMPORTANT]
+> This is an important message.
 
 > [!NOTE]
-> For compatibility reasons, if you're also using the Admonitions plugin, you should update it to at least v8.0.0 to avoid problems with the new callout system.
+> This is a note.
 
-> [!INFO]
-> Here's a callout block.
-> It supports **markdown** and [[Internal link|wikilinks]].
+> [!TIP]
+> This is a tip.
+
+> [!WARNING]
+> This is a warning message.
+
+> [!ERROR]
+
+> [!ATTENTION]
+> This is an attention message.
 
 
 # 标题
@@ -70,10 +93,11 @@ ___
 当然，三种分割线渲染效果都一样
 
 # 表格
-| Syntax | Description |
-| --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+自动填充: Alt + Shift + F
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
 
 # 链接语法
 这是一个链接 [Markdown语法](https://markdown.com.cn)。
