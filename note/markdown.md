@@ -1,3 +1,19 @@
+# Emoji
+- [Emoji官网](https://emojipedia.org/)
+💡
+👀
+😀
+
+# 组合
++ Python 提供隐式的[字符串连接](https://docs.python.org/2/reference/lexical_analysis.html#string-literal-concatenation), 例如,
+  ```C++
+  >>> print("wtf" "python")
+  wtfpython
+  >>> print("wtf" "") # or "wtf"""
+  wtf
+  ```
++ `'''` 和 `"""` 在 Python中也是字符串定界符, Python 解释器在先遇到三个引号的的时候会尝试再寻找三个终止引号作为定界符, 如果不存在则会导致 `SyntaxError` 异常.
+
 # 创建目录：
 - vscode下Markdown插件
 ```
