@@ -45,9 +45,43 @@ int test_2024_7_2_2(){
     return 0;
 }
 
+/// @brief 发现C++也有uint8_t
+/// @return 
+int test_2024_12_26_1(){
+    std::vector<uint8_t> a = {0xFF};
+    std::vector<unsigned char> b = {0xFF};
+    return 0;
+}
+
+/// @brief 从来没用过的位求反运算符~
+/// @return 
+int test_2024_12_26_2(){
+    uint8_t a = 0xFF;
+    uint8_t aa = ~a; //uint8_t提升成int类型，然后再求反
+    std::cout << aa << std::endl;   //竟然不输出
+    int8_t aaa = ~a;
+    std::cout << aaa << std::endl;   //也不输出
+
+    int b = ~a;
+    std::cout << b << std::endl; //-256
+    uint32_t c = ~a;
+    std::cout << c << std::endl; //4294967040
+    float d = ~a;
+    std::cout << d << std::endl; //-256
+    return 0;
+}
+
+/// @brief sizeof运算符
+/// @return 
+int test_2024_12_26_3(){
+    int a = 0xFF;
+    std::cout << sizeof(a) << std::endl;
+    std::cout << sizeof a << std::endl; //没错这是合法的
+    return 0;
+}
 
 /// @brief 主函数
 /// @return 
 int main(){
-    return test_2024_7_2_2();
+    return test_2024_12_26_3();
 }
