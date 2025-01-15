@@ -3,7 +3,7 @@
 💡
 👀
 😀
-
+✅
 # 组合
 + Python 提供隐式的[字符串连接](https://docs.python.org/2/reference/lexical_analysis.html#string-literal-concatenation), 例如,
   ```C++

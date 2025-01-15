@@ -48,7 +48,7 @@ git config --global --get http.proxy
 git config --global --get https.proxy  
 ```
 
-# confog信息
+# config信息
 ```
 [user]  
     name = XXX(自己的名称)  
